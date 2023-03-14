@@ -5,8 +5,8 @@ metadata:
 spec:
   secretTargetRef:
   - parameter: bearerToken
-    name: <SA_TOKEN>       # update this
+    name: thanos-token-xmc2j
     key: token
   - parameter: ca
-    name: <SA_TOKEN>       # update this
+    name: thanos-token-xmc2j
     key: ca.crt
