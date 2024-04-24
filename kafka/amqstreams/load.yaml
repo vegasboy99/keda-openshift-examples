@@ -22,16 +22,16 @@ spec:
           runAsNonRoot: true
           capabilities:
             drop:
-              - ALL
+            - ALL
           seccompProfile:
             type: RuntimeDefault
-        command: [ "/kafkaproducerapp" ]
+        command: ["/kafkaproducerapp"]
         env:
-          - name: BOOTSTRAP_SERVERS
-            value: my-cluster-kafka-bootstrap.openshift-operators.svc:9092
-          - name: TOPIC
-            value: my-topic
-          - name: MESSAGE_COUNT
-            value: "15"                    # increase this for a bigger load
-          - name: DELAY_MS
-            value: "100"
+        - name: BOOTSTRAP_SERVERS
+          value: my-cluster-kafka-bootstrap.openshift-operators.svc:9092
+        - name: TOPIC
+          value: my-topic
+        - name: MESSAGE_COUNT
+          value: "15"
+        - name: DELAY_MS
+          value: "100"
